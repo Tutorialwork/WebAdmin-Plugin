@@ -1,0 +1,9 @@
+name: WebAdmin
+main: de.tutorialwork.main.Main
+author: Tutorialwork
+version: 1.0
+
+commands:
+  web:
+    description: Create an webaccount or change the password
+  webadmin:
