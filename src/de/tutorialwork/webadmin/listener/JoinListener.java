@@ -1,6 +1,6 @@
-package de.tutorialwork.listener;
+package de.tutorialwork.webadmin.listener;
 
-import de.tutorialwork.utils.ServerManager;
+import de.tutorialwork.webadmin.utils.ServerManager;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

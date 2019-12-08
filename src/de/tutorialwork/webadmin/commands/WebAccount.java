@@ -1,8 +1,8 @@
-package de.tutorialwork.commands;
+package de.tutorialwork.webadmin.commands;
 
-import de.tutorialwork.main.Main;
-import de.tutorialwork.utils.BCrypt;
-import de.tutorialwork.utils.ServerManager;
+import de.tutorialwork.webadmin.main.Main;
+import de.tutorialwork.webadmin.utils.BCrypt;
+import de.tutorialwork.webadmin.utils.ServerManager;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

@@ -1,4 +1,4 @@
-package de.tutorialwork.utils;
+package de.tutorialwork.webadmin.utils;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;

@@ -1,15 +1,15 @@
-package de.tutorialwork.main;
+package de.tutorialwork.webadmin.main;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import de.tutorialwork.commands.Credits;
-import de.tutorialwork.commands.WebAccount;
-import de.tutorialwork.listener.JoinListener;
-import de.tutorialwork.listener.ServerListener;
-import de.tutorialwork.utils.Metrics;
-import de.tutorialwork.utils.MySQLConnect;
-import de.tutorialwork.utils.NameFetcher;
-import de.tutorialwork.utils.ServerManager;
+import de.tutorialwork.webadmin.commands.Credits;
+import de.tutorialwork.webadmin.commands.WebAccount;
+import de.tutorialwork.webadmin.listener.JoinListener;
+import de.tutorialwork.webadmin.listener.ServerListener;
+import de.tutorialwork.webadmin.utils.Metrics;
+import de.tutorialwork.webadmin.utils.MySQLConnect;
+import de.tutorialwork.webadmin.utils.NameFetcher;
+import de.tutorialwork.webadmin.utils.ServerManager;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.configuration.file.YamlConfiguration;

@@ -1,4 +1,4 @@
-package de.tutorialwork.utils;
+package de.tutorialwork.webadmin.utils;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import de.tutorialwork.main.Main;
+import de.tutorialwork.webadmin.main.Main;
 import org.bukkit.Bukkit;
 
 public class MySQLConnect {

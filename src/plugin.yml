@@ -1,7 +1,7 @@
 name: WebAdmin
-main: de.tutorialwork.main.Main
+main: de.tutorialwork.webadmin.main.Main
 author: Tutorialwork
-version: 1.0
+version: 1.0.1
 
 commands:
   web:

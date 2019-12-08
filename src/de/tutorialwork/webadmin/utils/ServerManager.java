@@ -1,8 +1,8 @@
-package de.tutorialwork.utils;
+package de.tutorialwork.webadmin.utils;
 
 import com.google.gson.Gson;
-import de.tutorialwork.listener.JoinListener;
-import de.tutorialwork.main.Main;
+import de.tutorialwork.webadmin.listener.JoinListener;
+import de.tutorialwork.webadmin.main.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;

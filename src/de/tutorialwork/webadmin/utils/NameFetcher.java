@@ -1,4 +1,4 @@
-package de.tutorialwork.utils;
+package de.tutorialwork.webadmin.utils;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

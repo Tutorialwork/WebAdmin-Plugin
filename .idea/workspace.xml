@@ -6,8 +6,21 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51777d44-edcb-4bcc-8085-a181bc588efc" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="51777d44-edcb-4bcc-8085-a181bc588efc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/tutorialwork/commands/Credits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/tutorialwork/webadmin/commands/Credits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/tutorialwork/commands/WebAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/tutorialwork/webadmin/commands/WebAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/tutorialwork/listener/JoinListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/tutorialwork/webadmin/listener/JoinListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/tutorialwork/listener/ServerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/tutorialwork/webadmin/listener/ServerListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/tutorialwork/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/tutorialwork/webadmin/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/tutorialwork/utils/BCrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/tutorialwork/webadmin/utils/BCrypt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/tutorialwork/utils/Metrics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/tutorialwork/webadmin/utils/Metrics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/tutorialwork/utils/MySQLConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/tutorialwork/webadmin/utils/MySQLConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/tutorialwork/utils/NameFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/tutorialwork/webadmin/utils/NameFetcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/tutorialwork/utils/ServerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/tutorialwork/webadmin/utils/ServerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugin.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,9 +33,22 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1TgmHoZ9kevUEMXb3JksK0XiZ4D" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/Development/Server 1.14/plugins" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="webadmin" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -33,15 +59,15 @@
       <recent name="de.tutorialwork.listener" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -57,5 +83,24 @@
       <updated>1573890027720</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="94" key="SettingsEditor" timestamp="1575815529018">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575815529018" />
   </component>
 </project>

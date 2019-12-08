@@ -1,4 +1,4 @@
-package de.tutorialwork.commands;
+package de.tutorialwork.webadmin.commands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;

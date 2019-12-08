@@ -12,7 +12,7 @@
 // ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 // OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-package de.tutorialwork.utils;
+package de.tutorialwork.webadmin.utils;
 
 import java.io.UnsupportedEncodingException;
 
