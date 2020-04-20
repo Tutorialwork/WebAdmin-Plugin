@@ -6,10 +6,7 @@ import de.tutorialwork.webadmin.commands.Credits;
 import de.tutorialwork.webadmin.commands.WebAccount;
 import de.tutorialwork.webadmin.listener.JoinListener;
 import de.tutorialwork.webadmin.listener.ServerListener;
-import de.tutorialwork.webadmin.utils.Metrics;
-import de.tutorialwork.webadmin.utils.MySQLConnect;
-import de.tutorialwork.webadmin.utils.NameFetcher;
-import de.tutorialwork.webadmin.utils.ServerManager;
+import de.tutorialwork.webadmin.utils.*;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -21,12 +18,15 @@ import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class Main extends JavaPlugin {
 
     public static MySQLConnect mysql;
     public static String Prefix = "§8[§9WebAdmin§8] §7";
     public static String NoPerms = Prefix + "§cSorry, but you don't can use this command";
+
+    public static Cache nameCache;
 
     @Override
     public void onEnable() {
@@ -97,7 +97,14 @@ public class Main extends JavaPlugin {
                     if(ServerManager.getName(id) != null){
                         op = Bukkit.getOfflinePlayer(ServerManager.getName(id));
                     } else {
-                        op = Bukkit.getOfflinePlayer(NameFetcher.getName(id));
+                        String name;
+                        if(!nameCache.isCached(id)){
+                            name = NameFetcher.getName(id);
+                            nameCache.cacheName(name, id);
+                        } else {
+                            name = nameCache.getNameCache().get(id);
+                        }
+                        op = Bukkit.getOfflinePlayer(name);
                     }
                     op.setOp(true);
                 }
@@ -156,6 +163,10 @@ public class Main extends JavaPlugin {
         mysql.update("INSERT INTO webadmin_settings (STRING, VALUE) VALUES ('MOTD1', '§9WebAdmin §7developed by §c§lTutorialwork')");
         mysql.update("INSERT INTO webadmin_settings (STRING, VALUE) VALUES ('MOTD2', '§8§lChange MOTD in the webinterface')");
         mysql.update("INSERT INTO webadmin_settings (STRING, VALUE) VALUES ('FULL_MSG', '§cThe maximum of players is reached. §7Try again later.')");
+        /*
+        Objects
+         */
+        nameCache = new Cache();
 
         updateWhitelist();
         updateOP();
