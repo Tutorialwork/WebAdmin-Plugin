@@ -80,12 +80,10 @@ public class Main extends JavaPlugin {
             @Override
             public void run() {
                 /*
-                Reset Operators and Whitelist
+                Sync data with web
                  */
-                for(Player all : Bukkit.getOnlinePlayers()){
-                    all.setOp(false);
-                    all.setWhitelisted(false);
-                }
+                updateOP();
+                updateWhitelist();
                 /*
                 Operators
                  */
@@ -173,11 +171,11 @@ public class Main extends JavaPlugin {
     }
 
     private void updateOP() {
-        ServerManager.setOP(Bukkit.getOperators());
+        ServerManager.setOP();
     }
 
     private static void updateWhitelist(){
-        ServerManager.setWhitelistPlayer(Bukkit.getWhitelistedPlayers());
+        ServerManager.setWhitelistPlayer();
     }
 
     private void initOnlinePlayers() {

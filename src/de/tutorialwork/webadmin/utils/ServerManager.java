@@ -149,7 +149,7 @@ public class ServerManager {
         return null;
     }
 
-    public static void setWhitelistPlayer(Set players){
+    public static void setWhitelistPlayer(){
         Gson gson = new Gson();
         ArrayList<String> whitelist = new ArrayList<>();
         for(OfflinePlayer all : Bukkit.getWhitelistedPlayers()){
@@ -198,7 +198,7 @@ public class ServerManager {
     OP
      */
 
-    public static void setOP(Set players){
+    public static void setOP(){
         Gson gson = new Gson();
         ArrayList<String> ops = new ArrayList<>();
         for(OfflinePlayer all : Bukkit.getOperators()){
