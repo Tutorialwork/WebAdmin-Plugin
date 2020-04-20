@@ -3,6 +3,7 @@ package de.tutorialwork.webadmin.main;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import de.tutorialwork.webadmin.commands.Credits;
+import de.tutorialwork.webadmin.commands.Status;
 import de.tutorialwork.webadmin.commands.WebAccount;
 import de.tutorialwork.webadmin.listener.JoinListener;
 import de.tutorialwork.webadmin.listener.ServerListener;
@@ -18,7 +19,6 @@ import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 public class Main extends JavaPlugin {
 
@@ -26,6 +26,7 @@ public class Main extends JavaPlugin {
     public static String Prefix = "§8[§9WebAdmin§8] §7";
     public static String NoPerms = Prefix + "§cSorry, but you don't can use this command";
 
+    public static String installedVersion = "1.1";
     public static Cache nameCache;
 
     @Override
@@ -35,6 +36,7 @@ public class Main extends JavaPlugin {
         Metrics metrics = new Metrics(this);
         startWebChecker();
         initOnlinePlayers();
+        runUpdater();
     }
 
     private void initFile() {
@@ -135,6 +137,7 @@ public class Main extends JavaPlugin {
          */
         Bukkit.getPluginCommand("web").setExecutor(new WebAccount());
         Bukkit.getPluginCommand("webadmin").setExecutor(new Credits());
+        Bukkit.getPluginCommand("status").setExecutor(new Status());
         /*
         Listener
          */
@@ -182,6 +185,13 @@ public class Main extends JavaPlugin {
         for(Player all : Bukkit.getOnlinePlayers()){
             JoinListener.joins.put(all, System.currentTimeMillis());
         }
+    }
+
+    private void runUpdater() {
+        Updater updater = new Updater();
+        Bukkit.getConsoleSender().sendMessage(Main.Prefix+"Your §9WebAdmin §7version is §c§loutdated");
+        Bukkit.getConsoleSender().sendMessage(Main.Prefix+"Currently you are on §c§l"+Main.installedVersion+" §7you can update to §9§l"+updater.getCurrentVersion());
+        Bukkit.getConsoleSender().sendMessage(Main.Prefix+"https://spigotmc.org/resources/72803");
     }
 
 }
